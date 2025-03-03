@@ -46,15 +46,22 @@
 .myHeader{
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: white;
   color: black;
   width:100%;
   heighr: 50px;
 }
   
+.myHeader h1{
+  flex-grow: 1;
+  text-align: center;
+}
+  
 .hBtn{
   background: none;
   border: none;
+  margin:20 px;
 }
 
     </style>
@@ -62,8 +69,10 @@
 <body>
     
   <header class="myHeader">
-    <button class="hBtn" onclick="">
+    <a href="home.html">
+    <button class="hBtn">
       <img src="light-house.svg" width="40" height="40"></button>
+    </a>
     <h1 style="text-align:center;">Fortunate. T Mahlobo <br/>
       junior full-stack developer</h1> 
   </header>
