@@ -16,7 +16,6 @@ body, h1, p {
     margin: 0;
     padding-top: 0px;
     padding: 20px;
-    position:fixed;
     align-self: center;
     background: rgb(69,76,182);
     background: linear-gradient(65deg, rgba(69,76,182,1) 0%, rgba(185,215,227,1) 22%, rgba(217,241,250,1) 48%, rgba(226,242,247,1) 68%, rgba(235,255,255,1) 88%);
