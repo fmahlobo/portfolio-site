@@ -1,5 +1,5 @@
 /* Reset default margins */
-body, h1, p {
+body, header {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -18,7 +18,6 @@ body, h1, p {
     padding: 20px;
     align-self: center;
     background: rgb(69,76,182);
-    background: linear-gradient(65deg, rgba(69,76,182,1) 0%, rgba(185,215,227,1) 22%, rgba(217,241,250,1) 48%, rgba(226,242,247,1) 68%, rgba(235,255,255,1) 88%);
 }
 
 /* Left Column (30%) */
@@ -62,17 +61,13 @@ body, h1, p {
 
 /* Header */
 .myHeader  {
+    width: 100%;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center;
     color: black;
-    width: auto;
-    margin-bottom: 0px;
-    background: linear-gradient(315deg, rgba(164,227,236,1) 10%, rgba(101,229,240,1) 39%, rgba(48,195,255,1) 65%, rgba(40,14,250,1) 92%);
-    min-height: auto;
-    width: 100%;
-    box-sizing: border-box;
-    padding-bottom: 0px;
+    background: rgba(164,227,236,1);
+    
 }
 
 /* Header Title */
@@ -86,5 +81,5 @@ body, h1, p {
 .hBtn {
     background: none;
     border: none;
-    margin: 20px;
+    margin: 0;
 }
