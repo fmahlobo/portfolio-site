@@ -70,7 +70,7 @@ body, h1, p {
     height: 50px;
     margin-bottom: 0px;
     background: linear-gradient(315deg, rgba(164,227,236,1) 10%, rgba(101,229,240,1) 39%, rgba(48,195,255,1) 65%, rgba(40,14,250,1) 92%);
-    height: 100%;
+    height: 100vh;
     width: 100%;
     box-sizing: border-box;
     padding: 0px;
