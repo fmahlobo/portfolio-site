@@ -3,6 +3,7 @@ body, h1, p {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    
 }
 
 /* Main Flexbox Container */
@@ -14,6 +15,8 @@ body, h1, p {
     max-width: 1200px; /* Prevents stretching too wide */
     margin: auto;
     padding: 20px;
+   background: rgb(69,76,182);
+background: linear-gradient(65deg, rgba(69,76,182,1) 0%, rgba(185,215,227,1) 22%, rgba(217,241,250,1) 48%, rgba(226,242,247,1) 68%, rgba(235,255,255,1) 88%);
 }
 
 /* Left Column (30%) */
@@ -51,7 +54,7 @@ body, h1, p {
 
 /* Section Styling */
 .section {
-    margin: 1px;
+    margin: 0px;
     font-weight: 650;
 }
 
@@ -60,17 +63,21 @@ body, h1, p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    color: black;
+    background-color: black
+    color: white;
     width: 100%;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
+     background: rgb(164,227,236);
+background: linear-gradient(315deg, rgba(164,227,236,1) 10%, rgba(101,229,240,1) 39%, rgba(48,195,255,1) 65%, rgba(40,14,250,1) 92%);
+height: 100%;    
 }
 
 /* Header Title */
 .myHeader h1 {
     flex-grow: 1;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Header Button */
