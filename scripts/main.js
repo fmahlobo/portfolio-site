@@ -58,7 +58,7 @@ function skills(event) {
     event.preventDefault();
 
     // Redirect the user to another page
-    window.location.href = "projects.html";
+    window.location.href = "skills.html";
 }
 
 // Add event listener to div
