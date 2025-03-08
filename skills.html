@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('5back.jpg'); /* Sample background */
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        img {
+            max-width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .skill-container {
+            width: 300px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        .skill-bar {
+            height: 20px;
+            background-color: #4CAF50;
+            border-radius: 8px;
+            width: 0;
+            transition: width 1.5s ease-in-out;
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+            font-family: Arial;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Skills & Tools</h1>
+        
+        <p>This is where I outline my skills, languages and tools.</p>
+
+        <h2>Section 1: Skills</h2>
+        <ul>
+            <li>Web development</li>
+            <li>Mobile development</li>
+            <li>Desktop development</li>
+            <li>Data visualization</li>
+            <li>Test automation</li>
+            <li>Functional testing</li>
+            <li>Embeded systems</li>
+            <li>Game development</li>
+            <li>CI/CD pipelines version control</li>
+            <li>CyberSecurity</li>
+            <li>Problem solving & debugging</li>
+            <li>Soldering</li>
+            <li>Computer repair and troubleshooting</li>
+        </ul>
+        
+        <h2>Programming languages</h2>
+        <div class="skill-container">
+        <div class="skill-bar" data-percent="80">PYTHON</div>
+        </div>
+        
+         <div class="skill-container">
+        <div class="skill-bar" data-percent="75">C#</div>
+        </div>
+        
+        
+         <div class="skill-container">
+        <div class="skill-bar" data-percent="50">C++</div>
+        </div>
+        
+         <div class="skill-container">
+        <div class="skill-bar" data-percent="70">JAVASCRIPT</div>
+        </div>
+        
+         <div class="skill-container">
+        <div class="skill-bar" data-percent="80">HTML & CSS</div>
+        </div>
+        
+        <div class="skill-container">
+        <div class="skill-bar" data-percent="80">JAVA</div>
+        </div>
+
+        <h2>Section 3: Tools & frameworks.</h2>
+        <ul>
+            <li>Hugging face</li>
+            <li>Kaggle</li>
+            <li>LangChain</li>
+            <li>Git</li>
+            <li>Visual studio</li>
+            <li>Andriod studio</li>
+            <li>Google dev suite</li>
+            <li>Jupyter lab</li>
+            <li>Blender3d</li>
+            <li>Uchronia Blender game engine</li>
+            <li>Godot game engine</li>
+            <li>nmap</li>
+            <li>WireShark</li>
+            <li>burp suite</li>
+            <li>Metasploit</li>
+        </ul>
+
+        <h6>
+            The list is probably incomplete, but you get the idea.<br/>
+        </h6>
+
+        <footer>
+            <p>Footer Content - Thank you for visiting!</p>
+        </footer>
+    </div>
+    
+    
+    <script>
+        window.onload = function() {
+            let skills = document.querySelectorAll('.skill-bar');
+            
+            skills.forEach(skill => {
+                let percent = skill.getAttribute('data-percent');
+                skill.style.width = percent + '%';
+                skill.innerHTML = skill.innerHTML + ' ' + percent + '%';
+            });
+        };
+    </script>
+    
+</body>
+</html>

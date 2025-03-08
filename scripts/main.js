@@ -50,3 +50,16 @@ function projects(event) {
 
 // Add event listener to div
 document.getElementById("projects").addEventListener("click", projects);
+
+
+
+function skills(event) {
+    // If needed, prevent default behavior
+    event.preventDefault();
+
+    // Redirect the user to another page
+    window.location.href = "projects.html";
+}
+
+// Add event listener to div
+document.getElementById("skills").addEventListener("click", skills);

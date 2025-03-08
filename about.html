@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+    <title>Skill Meter</title>
+    <style>
+ 
+        .skill-container {
+            width: 300px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        .skill-bar {
+            height: 20px;
+            background-color: #4CAF50;
+            border-radius: 8px;
+            width: 0;
+            transition: width 1.5s ease-in-out;
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+            font-family: Arial;
+        }
+    </style>
 </head>
 <body>
-  <h1>
-    Hello, World!
-  </h1>
+    <h2>Skills</h2>
+    
+    <div class="skill-container">
+        <div class="skill-bar" data-percent="80">HTML</div>
+    </div>
+    
+    <div class="skill-container">
+        <div class="skill-bar" data-percent="70">CSS</div>
+    </div>
+    
+    <div class="skill-container">
+        <div class="skill-bar" data-percent="65">JavaScript</div>
+    </div>
+    
+    <div class="skill-container">
+    <div class="skill-bar" data-percent="50">JAVA</div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            let skills = document.querySelectorAll('.skill-bar');
+            
+            skills.forEach(skill => {
+                let percent = skill.getAttribute('data-percent');
+                skill.style.width = percent + '%';
+                skill.innerHTML = skill.innerHTML + ' ' + percent + '%';
+            });
+        };
+    </script>
 </body>
 </html>
